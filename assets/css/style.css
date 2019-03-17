@@ -1,0 +1,96 @@
+  /* navbar animation*/
+  nav .navhover ul li a {
+    position:relative;
+    z-index: 1;
+  }
+  nav .navhover ul li a:hover {
+    color: rgb(7, 5, 0);
+  }
+  nav .navhover ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #F1C40F;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav .navhover ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  
+  /* profile picture */
+
+.profile-card-img{
+    background-image: url("../images/landpage.jpg");
+    height:300px;
+    background-size:cover;
+}
+.profile-card{
+    margin:15px;
+    background-color:#ffffff;
+}
+
+#myimg{
+    margin-top:-70px;
+    border-bottom:8px solid rgb(223, 61, 12);
+    height: 200px;
+}
+
+#discription{
+    padding:20px;
+    padding-bottom:0;
+    padding-top:5px;
+}
+div.pullRight a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+ /* animated menu items */
+
+.mm-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .mm-bar1, .mm-bar2, .mm-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+
+
+
+
+/* footer */
+#footerpad {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color: #000000;
+  }
+  
+  footer a:focus, footer a:hover {
+    color: #0085A1;
+  }
+  
