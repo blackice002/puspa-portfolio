@@ -6,24 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Blackice</title>
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
   <link rel="stylesheet" href="assets/css/Card-hover-affect-2.css">
   <!-- <link rel="stylesheet" href="assets/css/menu-collapse-ultimate.css"> -->
-  <!-- <link rel="stylesheet" href="assets/css/Profile-Card.css"> -->
-  <!-- <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css"> -->
   <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark text-light fixed-top bg-dark" id="navtop">
-    <div class="container"><a class="navbar-brand" href="#mainpage"><span>BL<span id="letA">A</span>CKICE </span></a><button class="navbar-toggler"
-        data-toggle="collapse" data-target="#collapsingNavbar3"><span class="sr-only">Toggle navigation</span><span
-          class="navbar-toggler-icon"></span></button>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navtop">
+    <div class="container"><a class="navbar-brand" href="#mainpage"><span>BL<span id="letA">A</span>CKICE
+        </span></a><button class="navbar-toggler" data-toggle="collapse" data-target="#collapsingNavbar3"><span
+          class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="collapsingNavbar3">
         <ul class="nav navbar-nav nav-right ml-auto text-uppercase text-light">
           <li class="nav-item" role="presentation"><a class="nav-link active" href="#mainpage">Home </a></li>
@@ -33,57 +32,156 @@
       </div>
 
   </nav>
-  
-</div>
   <section id="mainpage">
-  <div class="text-center profile-card">
-    <div class="profile-card-img" id="backmain"></div>
-    <div><img src="assets/images/IMG_1116.jpg" id="myimg" class="rounded-circle" />
-      <h3>Puspa Sharma</h3>
-      <p id="discription"> o o o </Span><span id="text1">Full Stack Developer</span> o o o </p>
-      <div class="card">
-        <div class="card-body" id="card-text">
-          <div class="card" id="discText">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem nemo tempora amet facilis, veritatis necessitatibus fugit itaque quas perferendis sit quos quod commodi laudantium repudiandae sequi! Beatae, voluptatem ducimus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem nemo tempora amet facilis, veritatis necessitatibus fugit itaque quas perferendis sit quos quod commodi laudantium repudiandae sequi! Beatae, voluptatem ducimus? </p>
-        </div>
+    <div class="container-fluid">
+      <div class="text-center profile-card">
+        <div class="profile-card-img" id="backmain"></div>
+        <div><img src="assets/images/IMG_1116.jpg" id="myimg" class="rounded-circle" />
+          <h2>Puspa Sharma</h2>
+          <h3 id="discription"> . . . <span id="text1" class="text-uppercase">Full Stack Learner</span> . . . </h3>
+          <div class="card">
+            <div class="card-body" id="card-text">
+              <div class="card" id="discText">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem nemo tempora amet
+                  facilis, veritatis necessitatibus fugit itaque quas perferendis sit quos quod commodi laudantium
+                  repudiandae sequi! Beatae, voluptatem ducimus? Lorem, ipsum dolor sit amet consectetur adipisicing
+                  elit.
+                  Consequuntur voluptatem nemo tempora amet facilis, veritatis necessitatibus fugit itaque quas
+                  perferendis sit quos quod commodi laudantium repudiandae sequi! Beatae, voluptatem ducimus? </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+      </div>
+  <!-- Button trigger modal -->
+      <div class="container">
+      <div class="row justify-content-center">
+        <button type="button" class="btn" data-toggle="modal"
+          data-target="#exampleModalLong" id="btnResume">
+          view resume
+        </button>
+      </div>
+   
+       <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" id="modal-full">
+          <div class="modal-content">
 
+            <iframe src="assets/images/Profile.pdf" frameborder="0" id="resume"></iframe>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
 
-  <section id="myprofile">
-    <div class="container">
-      <figure class="card snip1563"><img src="assets/images/p04f5x5v.jpg" alt="p04f5x5v"/>
-        <figcaption>
-          <h3>Giftactis</h3>
-          <p>The only skills I have the patience to learn are those that have no real application in life.</p>
-        </figcaption><a href="https://blackice002.github.io/GifTastic/"></a>
-      </figure>
-      <figure class="card snip1563 hover"><img src="assets/images/mind.jpg"alt="mind" />
-        <figcaption>
-          <h3>Trivia Game</h3>
-          <p>The real fun of living wisely is that you get to be smug about it.</p>
-        </figcaption><a href="https://blackice002.github.io/TriviaGame/"></a>
-      </figure>
-      <figure class="card snip1563"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample59.jpg"
-          alt="sample59"/>
-        <figcaption>
-          <h3>Fletch Skinner</h3>
-          <p>But Calvin is no kind and loving god! He&#39;s one of the old gods! He demands sacrifice! </p>
-        </figcaption><a href="#"></a>
-      </figure>
-    </div>
-  </section>
-
-<section id="contact">
-  <div class="container-fluid">
-      <img class="imgcont"   ssrc="assets/images/landpage.jpg" alt="landscape">
+<div class="container mt-4">
+<div class="card p-2" id="skillB">
+  <div class="card-header text-center text-uppercase">technologies</div>
+    <div class="card p-2" >
+        <div class="card" id="skillB">
+  <ul class="text-center" id="skill">
+    <li>Html</li>
+    <li>Css</li>
+    <li>Javascript</li>
+    <li>Node.js</li>
+    <li>Photoshop</li>
+    <li>Illustrator</li>
+  </ul>
+</div>
+</div>
+</div>
 </div>
 
-</section>
 
+  </section>
+
+  <section id="myprofile">
+      <div class="container-fluid">
+        <h3 id="discription"> . . . <span id="text1" class="text-uppercase justify-content-center">My Projects</span> . . .</h3>
+        <div class="justify-content-center">
+        <figure class="card snip1563"><img src="assets/images/p04f5x5v.jpg" alt="p04f5x5v" />
+          <figcaption>
+            <h3>Giftactis</h3>
+            <p>Search your fav animal</p>
+          </figcaption>
+          <a href="https://blackice002.github.io/GifTastic/"></a>
+        </figure>
+        <figure class="card snip1563 hover"><img src="assets/images/mind.jpg" alt="mind" />
+          <figcaption>
+            <h3>Trivia Game</h3>
+            <p>Take some test .</p>
+          </figcaption>
+          <a href="https://blackice002.github.io/TriviaGame/"></a>
+        </figure>
+        <figure class="card snip1563">
+          <img src="assets/images/crystal.jpg" alt="crystal" />
+          <figcaption>
+            <h3>CRYSTALS COLLECTOR</h3>
+            <p>Choose the right crystal to win game </p>
+          </figcaption>
+          <a href="https://blackice002.github.io/unit-4-game/"></a>
+        </figure>
+      </div>
+      </div>
+    </section>
+  <!-- ****** contact portfolio ******** -->
+
+
+  
+  <hr>
+  <!-- ****** contact information ******** -->
+  <section id="contact">
+    <div class="container-fluid">
+      <form action="javascript:void();" method="post" id="contactForm">
+        <div class="form-row">
+          <div class="col-md-6" style="  padding-left: 20px;padding-right: 20px;">
+            <fieldset></fieldset>
+            <legend><i class="fa fa-info"></i> Contact Information</legend>
+            <p></p>
+            <div class="table-responsive">
+              <table class="table align-items-center">
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-building"></i></td>
+                    <td>43-03 72street woodside NY 11377</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-phone"></i></td>
+                    <td>347 - 285 3904 </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-envelope"></i></td>
+                    <td>blackice002@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-12 col-md-6" id="message">
+            <fieldset>
+              <legend><i class="fa fa-envelope"></i> Contact</legend>
+            </fieldset>
+            <div class="form-group has-feedback"><label for="from_name">Full Name</label><input class="form-control"
+                type="text" name="from_name" required placeholder="First Name Last Name" id="from_name" tabindex="-1" />
+            </div>
+            <div class="form-group has-feedback"><label for="from_email">Email</label><input class="form-control"
+                type="email" name="from_email" required placeholder="Your  email address" id="from_email" /></div>
+            <div class="form-group has-feedback"><label for="from_phone">Title of message</label><input
+                class="form-control" type="text" name="subject" placeholder="Title of message" id="from_phone" />
+            </div>
+            <div class="form-group"><label for="comments">Message</label><textarea class="form-control" rows="5"
+                name="Comments" placeholder="Type your message here .." id="comments"></textarea></div>
+            <div class="form-group"><button class="btn btn-primary active btn-block" type="submit"
+                style="  background-color: #303641;">Send <i class="fa fa-chevron-circle-right"></i></button></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
   <footer id="footerpad">
     <div class="container">
       <div class="row">
@@ -91,13 +189,13 @@
           <ul class="list-inline text-center">
             <li class="list-inline-item">
               <a href="https://www.facebook.com/blackicea"><span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>
             </li>
             <li class="list-inline-item">
               <a href="https://twitter.com/blackice0002"><span class="fa-stack fa-lg"><i
                     class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a>
             </li>
             <li class="list-inline-item"><a href="https://www.instagram.com/blackice0002"><span
                   class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
@@ -117,7 +215,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/Card-hover-affect-2.js"></script>
-<script src="assets/js/portfolio.js"></script>
+  <script src="assets/js/portfolio.js"></script>
 
 </body>
 

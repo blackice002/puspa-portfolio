@@ -8,7 +8,6 @@ $('nav a').click(function(event) {
     event.preventDefault();
 });
 
-
 $('nav a').mouseover(function(event) {
     $(this).css({
         "border-right": "1px solid yellow",
@@ -29,3 +28,7 @@ $(".navbar-brand").mouseover(function(event) {
         "border-left":""
 })
 });
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })
