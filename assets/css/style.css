@@ -1,6 +1,21 @@
+body{
+    margin:0;
+    padding:0;
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    font-family: "poppins", sans-serif;
+    background:#060c21;
+}
+
+.container{
+    width:90%;
+}
+
 #navtop{
-    background-color:rgba(1, 50, 67, .85);
-color:white;   
+    background-color:#060c21;
+    color:white;   
 }
 .nav a{
     text-align:center;
@@ -10,6 +25,7 @@ color:white;
     margin:0;
     padding:0;
 }
+
 #letA{
     font-size: 35px;
     background-color:red ; 
@@ -17,50 +33,63 @@ color:white;
     padding-left:4px;
 }
 
+section{
+    height:100vh;
+}
+
+
 .profile-card-img{
+
     background-image: url("../images/landpage.jpg");
     height:250px;
     background-size:cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+
 }
 .profile-card{
+    top:20vh;
     margin:15px;
-    background-color:#ffffff;
+    /* background-color:#ffffff; */
     border-radius: 4px;
+    color: white;
 }
 
+.profile-card h2{
+    text-transform: uppercase;
+}
 
 #myimg{
+    /* position: relative; */
     margin-top:-70px;
     border-bottom:8px solid rgb(223, 61, 12);
     height: 200px;
 }
 #card-text{
     color:white;
-    background-color:rgba(109, 109, 109, 0.315);
+    background-color:#060c21;
 }
 #discription{
     color:white;
     font-weight: 700;
     margin-top:20px;
-    background-color:rgb(1, 50, 67)
+    /* background-color:rgb(1, 50, 67) */
 }
 #text1{
-   color:red;
-    background-color:white;
+   color:rgb(255, 230, 0);
+    /* background-color:white; */
     padding:20px;
 }
 
 #discText{
-    background-color:rgb(1, 50, 67)
+    background-color:#060c21;
 }
 
 #discText p{
     margin: 10px;
 }
 
-div.pullRight a:before
+/* div.pullRight a:before
 {
     position: absolute;
     width: 2px;
@@ -71,36 +100,173 @@ div.pullRight a:before
     background: #FFF;
     opacity: 0.3;
     transition: all 0.3s;
-}
+} */
 #resume{
     height:100vh;
 }
 #btnResume{
-    background-color: rgb(1, 50, 67);
-color:white;
-border-radius: 20, 0, 20, 0;
+    background-color:#000;
+    color:white;
+    border-radius: 20, 0, 20, 0;
+    border: 1px solid white;
 }
 
-.imgcont{
-    width:100%;
+
+/* ***** */
+
+.section{
+    position:relative;
+    width:90%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    grid-template-rows: auto;
+    grid-gap: 20px 40px;
 }
-figure img{
-    widows: 100%;
+
+.section .box{
+    position:relative;
+    height:300px;
+    background:#060c21;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid #1b2e33;
+
+}
+.section .box:before{
+    content:'';
+    position: absolute;;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom: -2px;
+    background:#000;
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+.section .box:nth-child(1):before{
+    background:linear-gradient(315deg, #ff0057, #e64a19);
+}
+.section .box:nth-child(2):before{
+    background:linear-gradient(315deg, #89ff00, #00bcd4);
+}
+.section .box:nth-child(3):before{
+    background:linear-gradient(315deg, #391e63, #5d02ff);
+}
+.section .box:nth-child(4):before{
+    background:linear-gradient(315deg, #ff0000, #ffc107);
+}
+
+.section .box:nth-child(5):before{
+    background:linear-gradient(315deg, #ff0057, #e64a19);
+}
+.section .box:nth-child(6):before{
+    background:linear-gradient(315deg, #89ff00, #00bcd4);
+}
+.section .box:nth-child(7):before{
+    background:linear-gradient(315deg, #391e63, #5d02ff);
+}
+.section .box:nth-child(8):before{
+    background:linear-gradient(315deg, #ff0000, #ffc107);
+}
+.section .box:after {
+    content:'';
+    position: absolute;;
+    top:0;
+    left:0;
+    /* width:50%; */
     height:100%;
+    background:rgba(255,255,255,0.05);
+    pointer-events:none;
 }
+.content {
+    position:relative;
+    padding:20px;
+}
+
+.box .content h2{
+    position: absolute;
+    top :-60px;
+    right: 20px;
+    margin:0;
+    padding: 0;
+    font-size:10em;
+    color: rgba(255,255,255,.05);
+    transition:0.5s;
+}
+.box .content img{
+    position: relative;
+    /* top: */
+    margin:0;
+    padding: 0;
+    width:100%;
+    overflow:auto;
+    border-radius: 15px;
+
+}
+.box:hover .content h2{
+    top:140px;
+}
+.box .content h3{
+    position: relative;
+    margin: 0 0 10px;
+    padding:0;
+    font-size: 24px;
+    font-weight:500;
+    color:white
+}
+/* .box .content p{
+    margin:0;
+    padding:0;
+    color:rgb(197, 193, 193);
+    font-size:16px;
+} */
+.box .content a{
+    position: relative;
+    margin:20px 0 0;
+    padding:5px 15px;
+    text-decoration:none;
+    border:1px solid #ffff;
+    display:inline-block;
+    color:#ffff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity:0;
+    visibility: hidden;
+    border-radius: 0 50px 50px 0
+}
+.box:hover .content a{
+    transform: translateY(0);
+    opacity:1;
+    visibility: visible;
+}
+.box .content a:hover{
+    color:black;
+background:white;
+}
+
+
+/* ******* */
+
+
 
 #contact{
     color:white;
     padding: 40px;
     padding-right: 5px;
     padding-left: 4px;
-    background-color:rgb(1, 50, 67)
+    background-color:#060c21;
 }
 td{
     color:white;
 }
 .form-row{
 margin-left: 0px; margin-right: 0px; padding: 10px;
+}
+
+#contactA{
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -111,22 +277,33 @@ margin-left: 0px; margin-right: 0px; padding: 10px;
 
 /* footer */
 #footerpad {
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #000000;
+    /* background-color: #000000; */
   }
   
   footer a:focus, footer a:hover {
-    color: #0085A1;
+    color: rgb(221, 189, 8);
   }
 
-  #skill li{
-    list-style:none;
-border-bottom: 1px solid white;
-margin: auto;
-padding:auto;
-
+  .skill{
+      margin:20px;
   }
-  #skillB{
-    background-color:rgba(1, 50, 67, .6);
+  .skill li{
+        display:inline-flex;
+        list-style:none;
+        /* margin: auto;
+        padding:auto; */
+    
+  }
+  .skill li img{
+      height:100px;
+      width:100px;
+      border-radius: 100px;
+      background: white;
+  }
+  .skill h2{
+ color:rgb(212, 148, 9);
+ text-align: center;
+ text-transform: uppercase;
   }
