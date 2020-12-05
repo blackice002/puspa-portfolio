@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+.header_container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%);
+}
+
+.myLogo {
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    color: white;
+}
+
+.b_logo {
+    width: 40px;
+    object-fit: contain;
+}
+
+.com_name {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 10px;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
+.link{
+    display: flex;
+    color:white;
+    
+}
+.link:hover{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: rgb(83, 243, 248) 0 0 10px;
+}
