@@ -16,9 +16,10 @@ import {
   FaJsSquare,
   FaReact,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 import InfoCard from "../components/infoCard/InfoCard";
 import JobInfo from "../components/infoCard/JobInfo";
+
 const AboutMe = () => {
   return (
     <div className="about_container">
@@ -38,7 +39,7 @@ const AboutMe = () => {
         <FaWordpressSimple className="app_name" />
         <SiAdobepremiere className="app_name" />
       </div>
-      
+
       <h2 className="section_title">EDUCATION</h2>
       <div className="data_container">
         {myData.education.map((info) => (
