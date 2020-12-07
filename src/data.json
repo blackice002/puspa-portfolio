@@ -1,0 +1,46 @@
+
+  {
+    "education": [
+      {
+        "id": 1,
+        "name": "Columbia Engineering, New York - 2019 ",
+        "para": "Full-stack developer \n(MERN\n)",
+        "image_link": "../images/cooding_bootcamp.jpg",
+        "web_link": "https://bootcamp.cvn.columbia.edu/"
+      },
+      {
+        "id": 2,
+        "name": "Tribhuvan University, Nepal - 2004.",
+        "para": "Bachelor of Mathematics degree",
+        "image_link": "../images/tribhuvan_university.png",
+        "web_link": "//www.tribhuvan-university.edu.np"
+      },
+      {
+        "id": 3,
+        "name": "Arena multimedia -2007",
+        "para": "Web graphics design",
+        "image_link": "../images/arena-multimedia.png",
+        "web_link": "https://www.arena-multimedia.com/in/en/courses/ui-ux"
+      }
+    ],
+    "experience": [
+      {
+        "id": 4,
+        "name": "Web developer, Graphics designer",
+        "resp": "creating web graphics, , print video edit ",
+        "image_link": "../images/abc_logo.png",
+        "web_link": "https://www.abcnepal.tv/",
+        "tech":["Html", "CSS", "JavaScript", "WordPress", "Photoshop", "Illustrator", "Adobe Premiere"]
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "Shopping Cart",
+        "tech": " React, Redux, Commerce.js",
+        "image_link": "https://robohash.org/estnonenim.png?size=50x50&set=set1",
+        "web_link": "senate.gov/maecenas/leo/odio/condimentum/id/luctus/nec.aspx"
+      }
+    ]
+  }
+

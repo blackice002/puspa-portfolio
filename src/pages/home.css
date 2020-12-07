@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&display=swap');
+
+.home_container {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_div {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #e4f3f7;
+}
+
+.my_img {
+    height: 60%;
+    border-radius: 10%;
+    object-fit: contain;
+    border: 5px solid rgb(253, 253, 253);
+    box-shadow: rgb(2, 80, 110) 0 5px 2px;
+    z-index: 2;
+}
+
+
+.social_link {
+    display: flex;
+    margin-top: 10px;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.social_icons {
+    transition: .4s;
+    border-width: 4px;
+    color: #3b5998;
+    margin: 0;
+    padding: 0;
+}
+
+.social_icons:hover {
+    transform: scale(1.5);
+}
+
+hr {
+    border-width: 4px;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}

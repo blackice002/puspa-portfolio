@@ -3,23 +3,25 @@
 .header_container {
     position: fixed;
     display: flex;
-    align-items: center;
     height: 60px;
     width: 100%;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(2, 0, 36, 1) 100%);
+    z-index: 99;
+    background: #3b5998;
 }
 
 .myLogo {
+    height: 100%;
     display: flex;
     padding: 0 50px;
     align-items: center;
-    color: white;
+
 }
 
 .b_logo {
     width: 40px;
     object-fit: contain;
+    color: rgb(39, 93, 95);
+
 }
 
 .com_name {
@@ -30,13 +32,50 @@
     font-family: 'Do Hyeon', sans-serif;
     text-align: center;
 }
-.link{
+
+.link {
     display: flex;
-    color:white;
-    
+    color: white;
+
 }
-.link:hover{
+
+.link:hover {
     text-decoration: none;
     color: #fff;
     text-shadow: rgb(83, 243, 248) 0 0 10px;
+}
+
+.menu_container {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    /* color: #fff;   */
+    /* height: 100%; */
+}
+
+.menu_item {
+
+    color: #fff;
+    transition: .3s;
+    /* padding-bottom: 5px; */
+    font-size: 20px;
+
+}
+
+.menu_item:hover {
+    color: yellow;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+@media only screen and (max-width: 900px) {
+    .header_container {
+        flex-direction: column;
+    }
+
+    .menu_item {
+        color: #000428
+    }
 }

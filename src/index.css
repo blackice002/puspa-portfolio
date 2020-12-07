@@ -11,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/images/baby_pattern.jpg");
+  background-repeat: repeat;
 }
 
 code {
